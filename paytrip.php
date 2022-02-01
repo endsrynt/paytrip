@@ -5,7 +5,7 @@ echo "\e[0;33m[!] Reff: \e[0m";
 $reff =trim(fgets(STDIN));
 
 echo "\e[0;33m[!] Wallet Address Utama: \e[0m";
-$address =trim(fgets(STDIN));
+$addressutama =trim(fgets(STDIN));
 start:
 function nama()
 	{
@@ -51,7 +51,6 @@ $rand = angkarand(3);
 $namalengkap = "$nama1$nama2$rand";
 $domain = "gmailya.com";
 $email = "$namalengkap@$domain";
-$reff = "PT-vxWZu";
 $deviceid = randomstr(16);
 $rand1 = randomstr(4);
 $rand2 = randomstr(6);
@@ -214,7 +213,7 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS =>'{
     "sendFrom": "'.$address.'",
     "privateKey": "'.$privatekey.'",
-    "receiver": "0x488513bE846B178614fA416575C2d5608a91caB7",
+    "receiver": "'.$addressutama.",
     "amount": "50"
 }',
   CURLOPT_HTTPHEADER => array(
