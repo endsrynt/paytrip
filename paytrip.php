@@ -213,7 +213,7 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS =>'{
     "sendFrom": "'.$address.'",
     "privateKey": "'.$privatekey.'",
-    "receiver": "'.$addressutama.",
+    "receiver": "'.$addressutama.'",
     "amount": "50"
 }',
   CURLOPT_HTTPHEADER => array(
