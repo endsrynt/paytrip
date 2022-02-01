@@ -1,12 +1,12 @@
 <?php
-start:
+
 
 echo "\e[0;33m[!] Reff: \e[0m";
 $reff =trim(fgets(STDIN));
 
 echo "\e[0;33m[!] Wallet Address Utama: \e[0m";
 $address =trim(fgets(STDIN));
-
+start:
 function nama()
 	{
 	$ch = curl_init();
